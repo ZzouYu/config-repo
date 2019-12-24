@@ -1,20 +1,20 @@
-# spring:
-#   application:
-#     name: order
-#   datasource:
-#     driver-class-name: com.mysql.jdbc.Driver
-#     username: root
-#     password: root
-#     url: jdbc:mysql://192.168.7.80:3306/springcloud_sell?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
-#   jpa:
-#     show-sql: true
-# eureka:
-#   client:
-#     service-url:
-#       defaultZone: http://localhost:8761/eureka/
-#   # 配置Swagger相关信息
-#   instance:
-#     prefer-ip-address: true
-#     instanceId: ${spring.cloud.client.ipAddress}:${server.port}
-#     status-page-url: http://${spring.cloud.client.ipAddress}:${server.port}/swagger-ui.html
-#     # ${server.port}为该服务的端口号
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.7.80:3306/springcloud_sell?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+  jpa:
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  # 配置Swagger相关信息
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+    status-page-url: http://${spring.cloud.client.ipAddress}:${server.port}/swagger-ui.html
+    # ${server.port}为该服务的端口号
