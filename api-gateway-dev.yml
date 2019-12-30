@@ -23,6 +23,7 @@ ribbon:
 management:
   endpoints:
     web:
-      exposure: include=routes,filters  
+      exposure:
+        include: routes,filters 
 env:
   dev
