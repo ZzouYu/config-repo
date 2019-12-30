@@ -24,6 +24,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: routes,filters 
+        include: "*" 
 env:
   dev1
