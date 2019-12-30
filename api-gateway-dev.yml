@@ -20,5 +20,9 @@ zuul:
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
+management:
+  endpoints:
+    web:
+      exposure: include=routes,filters  
 env:
   dev
