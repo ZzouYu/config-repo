@@ -17,6 +17,8 @@ zuul:
   host:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
+  ignored-patterns:
+    - /**/product/**       #过滤
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
