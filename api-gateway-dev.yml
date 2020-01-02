@@ -10,7 +10,7 @@ spring:
     username: guest
     password: guest
 zuul:
-  #全部服务忽略敏感头 
+  #全部服务忽略敏感头 （可以设置cookie）
   sensitive-headers: 
   routes:
     myProduct:
@@ -20,7 +20,7 @@ zuul:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
   #ignored-patterns:
-    #- /**/product/**       #过滤
+    #- /**/product/**       #过滤排除某些路由
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
