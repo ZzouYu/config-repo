@@ -10,6 +10,8 @@ spring:
     username: guest
     password: guest
 zuul:
+  #全部服务忽略敏感头 
+  sensitive-headers: 
   routes:
     myProduct:
       path: /myProduct/**
