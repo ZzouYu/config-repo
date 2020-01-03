@@ -24,6 +24,7 @@ zuul:
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
+ #对外暴露接口，可以查看所有的接口映射 http://localhost:9000/actuator/routes
 management:
   endpoints:
     web:
