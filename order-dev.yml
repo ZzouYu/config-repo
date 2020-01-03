@@ -18,3 +18,7 @@ spring:
     port: 6379
 env:
   dev
+  #配置服务降级
+feign:
+  hystrix:
+    enabled: true
