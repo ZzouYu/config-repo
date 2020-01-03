@@ -20,7 +20,7 @@ zuul:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
   #ignored-patterns:
-    #- /**/product/**       #过滤排除某些路由
+    #- /**/product/**       #过滤排除某些路由,即这些路由不让通过网关访问
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
